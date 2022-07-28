@@ -10,18 +10,97 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #F2F2F2;
+  z-index: 1;
   /* parameters for the header section */
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 154px;
+  height: 31px;
+  z-index: 100;
+}
+.header__title {
+  margin-left: 64px;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 90
+}
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 80;
+}
+.header__main-illustration {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 756px;
+  height: 608px;
+  z-index: 75;
+}
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2F80ED;
+  z-index: 70;
+  border: none;
 }
-
+.description {
+  display: flex;
+  justify-content: center;
+}
+.two-columns {
+  display: flex;
+  justify-items: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__brief {
+  width: 175px;
+  text-decoration: none;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+/*.two-columns-main-text {
+  width: 80%;
+  min-width: 784px;
+}*/
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.two-columns__span-accent {
+  line-height: 34;
+  font-size: 24px;
+  font-weight: bold;
+}
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;

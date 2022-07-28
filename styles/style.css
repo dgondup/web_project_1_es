@@ -18,6 +18,7 @@
   max-height: 756px;
   background-color: #F2F2F2;
   z-index: 1;
+  position: relative;
   /* parameters for the header section */
 }
 
@@ -72,7 +73,7 @@
 }
 .two-columns {
   display: flex;
-  justify-items: space-between;
+  justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: auto;
@@ -83,25 +84,85 @@
 .two-columns__brief {
   width: 175px;
   text-decoration: none;
-  line-height: 1.2;
+  line-height: 1.2px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0px 50px;
 }
-/*.two-columns-main-text {
-  width: 80%;
-  min-width: 784px;
-}*/
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  column-gap: 30px;
+}
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 .two-columns__span-accent {
-  line-height: 34;
+  line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
 /* including elements with key-value modifiers */
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  display: flex;
+  justify-content: center;
+  line-height: 1.15px;
+  font-size: 60px;
+  font-weight: bold;
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-subtitle {
+  display: flex;
+  justify-content: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+}
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  column-gap: 60px;
+}
+ul {
+  list-style: none;
+}
+.table__cell {
+  width: 250px;
+}
+.table__heading {
+  line-height: 1.15px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.table__text {
+  line-height: 1.2px;
+  font-size: 18px;
+  font-weight: normal;
+}
 .table__cell_theme_dark {
   width: 200px;
   color: white;

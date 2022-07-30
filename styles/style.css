@@ -178,3 +178,33 @@ ul {
   margin-right: 0;
   margin-top: 80px;
 }
+.feynman {
+  position: relative;
+  width: 100%;
+  height: 790px;
+  margin-top: 100px;
+}
+.feynman__title {
+  position: relative;
+  width: 775px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 100;
+}
+.feynman__subtitle {
+  position: relative;
+  margin-top: 70px;
+  left: 50%;
+  right: 50%;
+}
+.feynman__image {
+  background-image: url("images/feynman.png");
+  width: 867px;
+  height: 637px;
+  max-height: 50%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
